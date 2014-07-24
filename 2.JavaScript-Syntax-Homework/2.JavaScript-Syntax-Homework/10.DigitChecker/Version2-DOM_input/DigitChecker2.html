@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>checks for given integer if its third digit (right-to-left) is 3</title>
+    <link href="DigitChecker.css" rel="stylesheet" />
+</head>
+    
+<body>
+    <div id="wrapper">
+        <form method="post">
+	        <input  type="text" name="insert" maxlength="512" id="insert" />
+	        <input type="button" value="Evaluate" onclick="myFunc()"/>
+        </form>
+        <span>Is third digit 3:</span><div id="resultDiv"></div >
+   </div>
+    <script>
+        var myFunc = function myFunc() {
+            var inputValue = document.getElementById("insert").value;
+            var intValue = parseInt((inputValue / 100) % 10);
+            var result = intValue === 3 ? "Yes" : "No";
+
+            document.getElementById("resultDiv").innerHTML = result.toString();
+        }
+    </script>
+</body>
+</html>

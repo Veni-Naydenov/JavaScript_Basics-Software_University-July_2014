@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>7.is prime</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <form method="post">
+            <input type="text" name="inserted" maxlength="512" id="inserted" />
+            <input type="button" value="Evaluate" onclick="myFunc()" />
+        </form>
+        <span>Is it Prime ?</span><div id="resultDiv"></div>
+    </div>
+    <script>
+        var myFunc = function myFunc() {
+
+            var inputValue = document.getElementById("inserted").value - 0;
+            if (inputValue > 1) {
+                var count = 0;
+                for (var i = 2 ; i <= Math.sqrt(inputValue) ; i++) {
+                    if (inputValue % i === 0) {
+                        count = 1;
+                        var result = "NOT Prime !";
+                        document.getElementById("resultDiv").innerHTML = result.toString();
+                        break;
+                    }
+                }
+                if (count === 0) {
+                    result = "YES-> Prime !";
+                    document.getElementById("resultDiv").innerHTML = result.toString();
+                }
+            }
+            else if ((inputValue === 0) || (inputValue === 1)) {
+                result = "It is either simple or compound number !";
+                document.getElementById("resultDiv").innerHTML = result.toString();
+            }
+        }
+    </script>
+</body>
+</html>
+/*Test in browser!*/

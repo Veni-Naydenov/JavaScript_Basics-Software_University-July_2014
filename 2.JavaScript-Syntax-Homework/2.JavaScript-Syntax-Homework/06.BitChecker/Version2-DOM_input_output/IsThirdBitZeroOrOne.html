@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>5.checks if the bit 3 (counting from 0) of a given integer is 1 or 0.</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <form method="post">
+            <input type="text" name="insert" maxlength="512" id="insert" />
+            <input type="button" value="Evaluate" onclick="myFunc()" />
+        </form>
+        <span>Bits</span><div id="bin"></div>
+        <span>third Bit(counting from 0) is:</span><div id="resultDiv"></div>
+    </div>
+    <script>
+        var myFunc = function myFunc() {
+            var result;
+            var value = document.getElementById("insert").value;
+            var intValue = value - 0;
+            var bin = intValue.toString(2);
+            result = (((value >> 3) & 1) === 1) ? "1" : "0";
+            console.log(bin);
+            document.getElementById("bin").innerHTML = bin.toString(2);
+            document.getElementById("resultDiv").innerHTML = result.toString(); //shows the result in current html page
+        }
+    </script>
+</body>
+</html>

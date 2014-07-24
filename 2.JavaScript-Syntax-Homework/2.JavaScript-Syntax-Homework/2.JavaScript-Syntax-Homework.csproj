@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08C8965F-98A1-483A-9191-EDF3EE08ECF6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2.JavaScript_Syntax_Homework</RootNamespace>
+    <AssemblyName>2.JavaScript-Syntax-Homework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01.ConvertKWtoHP\ConvertKWtoHP.html" />
+    <Content Include="01.ConvertKWtoHP\ConvertKWtoHP.js" />
+    <Content Include="02.SimpleCalculation\SimpleCalculation.html" />
+    <Content Include="02.SimpleCalculation\SimpleCalculation.js" />
+    <Content Include="03.IsEven\IsEven.html" />
+    <Content Include="03.IsEven\IsEven.js" />
+    <Content Include="04.IsPrime\IsPrime.html" />
+    <Content Include="04.IsPrime\IsPrime.js" />
+    <Content Include="04.IsPrime\Version2_DOM_input_output\isPrime.html" />
+    <Content Include="04.IsPrime\Version2_DOM_input_output\styles.css" />
+    <Content Include="05.DivisionBy3\divisionBy3.html" />
+    <Content Include="05.DivisionBy3\divisionBy3.js" />
+    <Content Include="06.BitChecker\BitChecker.html" />
+    <Content Include="06.BitChecker\BitChecker.js" />
+    <Content Include="06.BitChecker\Version2-DOM_input_output\IsThirdBitZeroOrOne.html" />
+    <Content Include="06.BitChecker\Version2-DOM_input_output\styles.css" />
+    <Content Include="07.LifetimeSupplyCalculator\LifetimeSupplyCalculator.html" />
+    <Content Include="07.LifetimeSupplyCalculator\LifetimeSupplyCalculator.js" />
+    <Content Include="08.CylinderVolume\CylinderVolume.html" />
+    <Content Include="08.CylinderVolume\CylinderVolume.js" />
+    <Content Include="09.TreeOrHouse\TreeOrHouse.html" />
+    <Content Include="09.TreeOrHouse\TreeOrHouse.js" />
+    <Content Include="10.DigitChecker\DigitChecker.html" />
+    <Content Include="10.DigitChecker\DigitChecker.js" />
+    <Content Include="10.DigitChecker\Version2-DOM_input\DigitChecker.css" />
+    <Content Include="10.DigitChecker\Version2-DOM_input\DigitChecker2.html" />
+    <Content Include="11.DigitAsWord\DigitAsWord.html" />
+    <Content Include="11.DigitAsWord\DigitAsWord.js" />
+    <Content Include="12.Variables\Variables.html" />
+    <Content Include="12.Variables\Variables.js" />
+    <Content Include="13.DigitalSoothsayer\DigitalSoothsayer.html" />
+    <Content Include="13.DigitalSoothsayer\DigitalSoothsayer.js" />
+    <Content Include="14.CalculateExpression\CalculateExpression.html" />
+    <Content Include="14.CalculateExpression\CalculateExpression.js" />
+    <Content Include="14.CalculateExpression\calculatorStyles.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63482/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

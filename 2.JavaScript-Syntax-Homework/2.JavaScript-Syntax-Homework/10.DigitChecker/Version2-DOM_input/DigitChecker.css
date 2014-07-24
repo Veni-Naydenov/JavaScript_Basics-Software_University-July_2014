@@ -1,0 +1,23 @@
+﻿
+body {
+    background-color:#428951;
+}
+div#wrapper {
+    width:700px;
+    height:270px;
+    border:3px solid black;
+   padding-top:45px;
+   padding-left:20px;
+}
+div#resultDiv {
+    width:90px;
+    height:40px;
+    background:#fff;
+    text-align:center;
+    padding-top:25px;
+    
+}
+span#result {
+    display:inline-block;
+    padding-top:25px;
+}

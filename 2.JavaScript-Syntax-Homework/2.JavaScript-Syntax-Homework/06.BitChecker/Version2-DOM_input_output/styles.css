@@ -1,0 +1,36 @@
+﻿
+body {
+    background-color:#428951;
+}
+div#wrapper {
+    width:400px;
+    height:270px;
+    border:3px solid black;
+   padding-top:45px;
+   padding-left:20px;
+}
+div#resultDiv {
+    width:90px;
+    height:40px;
+    background:#fff;
+    text-align:center;
+    padding-top:25px;
+    
+}
+div#bin {
+    width:250px;
+    height:40px;
+    background:#e0f14b;
+    overflow-x:scroll;
+}
+span#result {
+    display:inline-block;
+    padding-top:25px;
+}
+span:first-of-type {
+color:#4cff00;
+}
+span:last-of-type {
+color:#b0310e;
+background-color:black;
+}
