@@ -1,0 +1,15 @@
+﻿html {
+    background-color: black;
+}
+
+body {
+    border: 3px solid #0094ff;
+    display: inline-block;
+    padding: 10px;
+    background-color: #deefe9;
+}
+
+ul#result {
+    border: 1px solid #0094ff;
+    display: inline-block;
+}
