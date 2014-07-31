@@ -1,4 +1,8 @@
-﻿function hideOddRows() {
+﻿/*3.You are given an HTML file holding a table of elements and a button titled 
+"Hide Odd Rows". Write JavaScript code hideOddRows.js that attaches to the button click event 
+and hides the odd rows of the table when clicked.*/
+
+function hideOddRows() {
     //var rows = document.body.querySelectorAll('tr');
     //var rowsCount = rows.length;
 

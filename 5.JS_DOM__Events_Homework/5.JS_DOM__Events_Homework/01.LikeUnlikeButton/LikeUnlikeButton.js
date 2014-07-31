@@ -1,4 +1,6 @@
-﻿function likeUnlike(){
+﻿/*1.Crate a HTML page holding a "Like" button that changes to "Unlike" 
+when clicked, then again to "Like", etc.*/
+function likeUnlike() {
     var btn = document.getElementById('like');
     var btnValue = btn.value;
     var likeUrl = 'url(images/loveJS.jpg)';

@@ -1,4 +1,10 @@
-﻿(function getMouseCoordinates() {
+﻿/*5.Write a JavaScript code that prints the mouse coordinates in a text area 
+when we move the mouse over the HTML document. A sample output might be as follows:
+X:123; Y:3151 Time: Tue Jul 22 2014 20:39:09 GMT+0200 (FLE Daylight Time)
+X:3412; Y:567 Time: Tue Jul 21 2014 22:35:12 GMT+0300 (FLE Daylight Time)
+…
+*/
+(function getMouseCoordinates() {
     var mousePos;
     var date = window.Date();
     window.onmousemove = handleMouseMove;
